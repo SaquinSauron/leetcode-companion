@@ -1,0 +1,9 @@
+{
+  "name": "leetcode-companion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "First-time algorithm lessons with Python, C, checkpoints and interactive visual dry runs.",
+  "engines": {"node": ">=18.17"},
+  "scripts": {"start": "node server.cjs", "test": "node --test", "build": "node build.cjs"}
+}
+

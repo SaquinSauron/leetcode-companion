@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/
+*.log
+Thinkbook-backup*.json
+*.pem
+*.key
+*-lesson.json
+
