@@ -2,6 +2,18 @@
 
 An independent learning app for approaching an algorithm problem for the first time. It does not depend on Thinkbook. Work from the input/output contract to a hand-solved example, brute force, a better approach, the invariant and proof, a visual dry run, Python and C solutions, and edge cases.
 
+## Coverage: curriculum versus completed lessons
+
+The question library lists **all 150 official NeetCode 150 entries plus 50 independently selected extras**. NeetCode membership, titles, categories and difficulties are pinned to the official `neetcode-gh/leetcode` metadata. See `curriculum-data.json` and `THIRD_PARTY_NOTICES.md` for provenance and license. The extras are not presented as the official NeetCode 250 list.
+
+**Only Two Sum currently has a complete built-in lesson.** The other 199 entries start as **Lesson not created**. A catalog entry is not a finished Python/C explanation. A generated lesson becomes **AI lesson available - unreviewed**, and only a successfully persisted lesson is labelled **Saved AI lesson**. Marking a problem **Studied** is a personal progress mark; it does not claim that its code was compiled or independently reviewed.
+
+Click **Choose a question** to search by number/name, filter by topic, switch between the core 150 and extras, and see the actual lesson counts. Choose **Prepare lesson**, follow the official problem link, paste the full statement/examples/constraints, and generate it with the GPT backend. The model receives the selected catalog identity and is instructed to reject a conflicting or underspecified statement. Saved lessons can be reopened without another model request.
+
+Generated curriculum lessons are stored in IndexedDB to accommodate a larger lesson library. Export **saved lessons & progress** regularly; browser data can be cleared and the file/server editions have separate origins. Import validates all lesson structures before adding them. Storage failures are reported, and session-only lessons are not labelled as persistently saved.
+
+Full ready-to-study coverage of the 150 remains unfinished until those individual lessons have actually been created and reviewed. The UI deliberately reports this gap rather than counting titles as completed coverage. Generating each new lesson requires a configured API key and may incur API costs; the app does not silently generate a paid batch of 200 lessons.
+
 ## Start immediately: no installation
 
 1. Download and extract this project ZIP.

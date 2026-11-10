@@ -8,4 +8,5 @@ Thinkbook-backup*.json
 *.pem
 *.key
 *-lesson.json
+LeetCode-Library-Backup*.json
 
